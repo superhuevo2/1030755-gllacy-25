@@ -9,14 +9,23 @@
       <nav class='navigation'>
         <img src='img/logo.svg' width='154' height='64' alt='Магазин мороженого Глейси'>
         <ul class='site-navigation-list'>
-          <li><a href='catalog.thml'>Каталог</a></li>
+          <li>
+            <p><a href='catalog.thml'>Каталог</a></p>
+            <ul class='catalog-list'>
+              <li><a class='catalog-item catalog-item-new' href='#'>Новинки</a></li>
+              <li><a class='catalog-item' href='#'>Сливочное</a></li>
+              <li><a class='catalog-item' href='#'>Щербет</a></li>
+              <li><a class='catalog-item' href='#'>Фруктовое</a></li>
+              <li><a class='catalog-item' href='#'>Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href='shipping-and-payment.html'>Доставка и оплата</a></li>
           <li><a href='about'>О компании</a></li>
         </ul>
         <ul class='user-navigation-list'>
-          <li class='user-navigation search-link'>Поиск</li>
-          <li class='user-navigation login-link'><a href='login.html'>Вход</a></li>
-          <li class='user-navigation basket-empty'><a href ='basket.html'>Пусто</a></li>
+          <li class='user-navigation'><a class='search-link' href='search.html'>Поиск</a></li>
+          <li class='user-navigation'><a class='login-link' href='login.html'>Вход</a></li>
+          <li class='user-navigation'><a class='basket basket-empty' href ='basket.html'>Пусто</a></li>
         </ul>
         <p class='header-contacts'>
           С 10 до 20, ежедневно
@@ -45,36 +54,44 @@
         <h2 class='visually-hidden'> Популярные товары</h2>
         <ul class='catalog-list'>
           <li class='catalog-item catalog-item-hit'>
-            <h3><a href='product-1.html'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <p>
-              <a href='product-1.html'><img src='img/product-1.jpg' width='267' height='267' alt='Сливочное с апельсиновым джемом и цитрусовой стружкой'></a>
-              310 Р
-              <span class='weight'>/кг</span>
-            </p>
+            <a href='product-1.html'>
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <p>
+                <img src='img/product-1.jpg' width='267' height='267' alt='Сливочное с апельсиновым джемом и цитрусовой стружкой'>
+                310 Р
+                <span class='weight'>/кг</span>
+              </p>
+            </a>
           </li>
           <li class='catalog-item catalog-item-hit'>
-            <h3><a href='product-2.html'>Сливочно-кофейное с кусочками шоколада</a></h3>
-            <p>
-              <a href='product-2.html'><img src='img/product-2.jpg' width='267' height='267' alt='Сливочно-кофейное с кусочками шоколада'></a>
-              380 Р
-              <span class='weight'>/кг</span>
-            </p>
+            <a href='product-2.html'>
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <p>
+                <img src='img/product-2.jpg' width='267' height='267' alt='Сливочно-кофейное с кусочками шоколада'>
+                380 Р
+                <span class='weight'>/кг</span>
+              </p>
+            </a>
           </li>
           <li class='catalog-item catalog-item-hit'>
-            <h3><a href='product-3.html'>Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <p>
-              <a href='product-3.html'><img src='img/product-3.jpg' width='267' height='267' alt='Сливочно-клубничное с присыпкой из белого шоколада'></a>
-              355 Р
-              <span class='weight'>/кг</span>
-            </p>
+            <a href='product-3.html'>
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <p>
+                <img src='img/product-3.jpg' width='267' height='267' alt='Сливочно-клубничное с присыпкой из белого шоколада'>
+                355 Р
+                <span class='weight'>/кг</span>
+              </p>
+            </a>
           </li>
           <li class='catalog-item catalog-item-hit'>
-            <h3><a href='product-4.html'>Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <p>
-              <a href='product-4.html'><img src='img/product-4.jpg' width='267' height='267' alt='Сливочное крем-брюле с карамельной подливкой'></a>
-              415 Р
-              <span class='weight'>/кг</span>
-            </p>
+            <a href='product-4.html'>
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <p>
+                <img src='img/product-4.jpg' width='267' height='267' alt='Сливочное крем-брюле с карамельной подливкой'>
+                415 Р
+                <span class='weight'>/кг</span>
+              </p>
+            </a>
           </li>
         </ul>
       </section>
@@ -97,10 +114,15 @@
         <section class='subscribe'>
           <h2 class='visually-hidden'>Оформление подписки</h2>
           <p>
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <span class='input'>Электронная почта</span>
-          <span class='button'>Отправить</span>
+          <form class='form subscribe-form' action='https://echo.htmlacademy.ru' method='post'>
+            <label class='visually-hidden' for='subscribe-email'>
+              Электронная почта
+            </label>
+            <input type='text' name='subscribe-email' id='subscribe-email' placeholder='Электронная почта'>
+            <button class='button' type='submit'>Отправить</button>
+          </form>
         </section>
         <section class='contacts'>
           <h2 class='visually-hidden'>Контактная информация</h2>
@@ -147,5 +169,60 @@
         Сделано в <a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a>C 2019
       </p>
     </footer>
+    <section class='modal modal-search'>
+      <h2 class='visually-hidden'>Поиск</h2>
+      <form class='form search-form' action='https://echo.htmlacademy.ru' method='get'>
+        <label class='visually-hidden' for='search'>Поиск</label>
+        <input type='text' name='search' id='search' placeholder='Что ищем?'>
+        <button type='submit'>Найти</button>
+      </form>
+      <button class='button-close' type='button'>Закрыть</button>
+    </section>
+    <section class='modal modal-login'>
+      <h2 class='visually-hidden'>Личный кабинет</h2>
+      <form class='form login-form' action='https://echo.htmlacademy.ru' method='post'>
+        <p>
+          <label class='visually-hidden' for='login-user'>
+            Электронная почта
+          </label>
+          <input type='text' name='login-user' id='login-user' placeholder='Электронная почта'>
+        </p>
+        <p>
+          <label class='visually-hidden' for='login-password'>
+            Пароль
+          </label>
+          <input type='password' name='login-password' id='login-password' placeholder='Пароль'>
+        </p>
+        <button class='button button-login' type='submit'>Войти</button>
+      </form>
+      <p class='login-extra'>
+        <a href='#'>Забыли пароль!</a>
+        <a href='#'>Регистрация</a>
+      </p>
+      <button class='button-close' type='button'>Закрыть</button>
+    </section>
+    <section class='modal modal-feedback'>
+      <h3>Форма обратной связи</h3>
+      <form class='form feedback-form' action='https://echo.htmlacademy.ru' method='post'>
+        <p>
+          <label>
+            Ваше имя
+            <input type='text' name='feedback-name' placeholder='Как вас зовут?'>
+          </label>
+        </p>
+        <p>
+          <label>
+            Электронная почта
+            <input type='text' name='feedback-email' placeholder='Ваша почта для ответа?'>
+          </label>
+        </p>
+        <p>
+          <label for='feedback-message'>Ваше сообщение</label>
+          <textarea name='feedback-message' id='feedback-message'>Напишите что-нибудь...</textarea>
+        </p>
+        <button class='button button-send' type='submit'>Отправить</button>
+      </form>
+      <button class='button-close' type='button'>Закрыть</button>
+    </section>
   </body>
 </html>
