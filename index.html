@@ -23,9 +23,22 @@
           <li><a href='about'>О компании</a></li>
         </ul>
         <ul class='user-navigation-list'>
-          <li class='user-navigation'><a class='search-link' href='search.html'>Поиск</a></li>
+          <li class='user-navigation'>
+            <a class='search-link' href='search.html'>Поиск</a>
+            <form class='form search-form' action='https://echo.htmlacademy.ru' method='get'>
+              <label class='visually-hidden' for='search'>Поиск</label>
+              <input type='text' name='search' id='search' placeholder='Что ищем?'>
+              <button type='submit'>Найти</button>
+            </form>
+          </li>
           <li class='user-navigation'><a class='login-link' href='login.html'>Вход</a></li>
-          <li class='user-navigation'><a class='basket basket-empty' href ='basket.html'>Пусто</a></li>
+          <li class='user-navigation'>
+            <a class='basket basket-empty' href ='basket.html'>Пусто</a>
+            <section class='basket bascket-full'>
+              <h2 class='visually-hidden'>Корзина</h2>
+              <p>Ваша корзина пуста</p>
+            </section>
+          </li>
         </ul>
         <p class='header-contacts'>
           С 10 до 20, ежедневно
@@ -58,40 +71,42 @@
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <p>
                 <img src='img/product-1.jpg' width='267' height='267' alt='Сливочное с апельсиновым джемом и цитрусовой стружкой'>
-                310 Р
-                <span class='weight'>/кг</span>
               </p>
             </a>
+            <p>
+              310 Р<span class='weight'>/кг</span>
+            </p>
+            <a href='#' class='button button-quick-view'>Быстрый просмотр</a>
           </li>
           <li class='catalog-item catalog-item-hit'>
             <a href='product-2.html'>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
               <p>
                 <img src='img/product-2.jpg' width='267' height='267' alt='Сливочно-кофейное с кусочками шоколада'>
-                380 Р
-                <span class='weight'>/кг</span>
               </p>
             </a>
+            <p>380 Р<span class='weight'>/кг</span></p>
+            <a href='#' class='button button-quick-view'>Быстрый просмотр</a>
           </li>
           <li class='catalog-item catalog-item-hit'>
             <a href='product-3.html'>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               <p>
                 <img src='img/product-3.jpg' width='267' height='267' alt='Сливочно-клубничное с присыпкой из белого шоколада'>
-                355 Р
-                <span class='weight'>/кг</span>
               </p>
             </a>
+            <p>355 Р<span class='weight'>/кг</span></p>
+            <a href='#' class='button button-quick-view'>Быстрый просмотр</a>
           </li>
           <li class='catalog-item catalog-item-hit'>
             <a href='product-4.html'>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               <p>
                 <img src='img/product-4.jpg' width='267' height='267' alt='Сливочное крем-брюле с карамельной подливкой'>
-                415 Р
-                <span class='weight'>/кг</span>
               </p>
             </a>
+            <p>415 Р<span class='weight'>/кг</span></p>
+            <a href='#' class='button button-quick-view'>Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -166,18 +181,9 @@
         </ul>
       </div>
       <p class='copyright'>
-        Сделано в <a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a>C 2019
+        Сделано в <a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a>&copy; 2019
       </p>
     </footer>
-    <section class='modal modal-search'>
-      <h2 class='visually-hidden'>Поиск</h2>
-      <form class='form search-form' action='https://echo.htmlacademy.ru' method='get'>
-        <label class='visually-hidden' for='search'>Поиск</label>
-        <input type='text' name='search' id='search' placeholder='Что ищем?'>
-        <button type='submit'>Найти</button>
-      </form>
-      <button class='button-close' type='button'>Закрыть</button>
-    </section>
     <section class='modal modal-login'>
       <h2 class='visually-hidden'>Личный кабинет</h2>
       <form class='form login-form' action='https://echo.htmlacademy.ru' method='post'>
