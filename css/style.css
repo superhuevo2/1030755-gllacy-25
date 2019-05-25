@@ -1,0 +1,356 @@
+body {
+  font-family: 'Roboto Arial sans-serif'; /*почему отображается другой шрифт*/
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849d8f; /*фон меняется вместе со слайдером*/
+}
+
+a {
+  color: #ffffff;  /*вид при наведении можно указать в общем?*/
+}
+
+.button {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  
+  background-color: #e74a35; /*нужно ли указывать цвет фона если градиент*/
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border: none;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+
+.button:hover,
+button:focus {
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+}
+
+.button:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+}
+
+.site-navigation-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  
+  list-style: none;
+}
+
+.site-navigation-list .site-navigation-catalog:hover {
+  color: #323232;
+  
+  background-color: #f7f6f3;
+}
+
+.site-navigation-list .site-navigation-catalog:active {
+  color: #323232;
+  
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
+.header-catalog-list {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  
+  background-color: #f7f6f3;
+
+  list-style: none;
+}
+
+.header-catalog-list li:first-child {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.header-catalog-list a {
+  text-decoration: none;
+  color: #323232;
+}
+
+.header-catalog-list a:hover {
+  background-color: #fbded7;
+}
+
+.header-catalog-list a:active {
+  background-color: #f6b5a5;
+}
+
+.user-navigation-list {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  
+  list-style: none;
+}
+
+.user-navigation-list a {
+  text-decoration: none;
+  
+}
+
+
+.user-navigation {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.header-contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+}
+
+.header-contacts-phone { /*на другую строку перенесется когда отрегулирую ширину параграфа, или на 2 параграфа надо разбить*/
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.special-promo {
+width: 560px;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #4c000c; /*так сделать или не трогать фон?*/
+  
+}
+
+.promo-raspberry {
+  background-image: url('../img/promo-raspberry.jpg');
+  background-repeat: no-repeat;
+}
+
+.promo-chocolate {
+  background-image: url('../img/promo-chocolate.jpg');
+  background-repeat: no-repeat;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+
+.catalog-item {
+width: 267px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  text-align: left;
+}
+
+.catalog-item-price span {
+  font-size: 30px;
+}
+
+.catalog-item .button {
+  visibility: hidden;
+}
+
+
+.catalog-item:hover {
+  
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.catalog-item:hover .button {
+  visibility: visible;
+}
+
+
+.features {
+width: 1146px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+
+  background-color: #eee3cb;
+  background-image: url(../img/features-background.jpg);
+  background-repeat: repeat;
+  background-position:  0 0;
+
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-list {
+  list-style: none;
+
+}
+
+.features-item{
+  padding-left: 60px;
+}
+
+
+
+.feature-1 {
+  background-image: url('../img/features-1.svg');
+  background-repeat: no-repeat;
+  
+}
+
+.feature-2 {
+  background-image: url('../img/features-2.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-3 {
+  background-image: url('../img/features-3.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.feature-4 {
+  background-image: url('../img/features-4.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.new-in-blog {
+  width: 560px;
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url('../img/blog-10-ways.jpg');
+
+
+}
+
+.new-in-blog h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  
+}
+
+.blog-post {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.subscribe {
+  width: 550px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  border-image: url('../img/subscribe-background.png');
+  border-image-slice: 5;
+}
+
+
+.contacts {
+  background-image: url('../img/contacts-map.png') 
+}
+
+.contacts-main {
+  width: 300px;
+  
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.contacts-info {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.socials-list {
+  list-style: none;
+
+}
+
+
+
+.social-button {
+  display: block;
+  
+  width: 40px;
+  height: 40px;
+  
+  text-decoration: none;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  
+}
+
+.social-button span {
+  color: transparent;
+}
+
+.twitter {
+  background-image: url('../img/twitter.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.instagram {
+  background-image: url('../img/instagram.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url('../img/fb.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vk {
+  background-image: url('../img/vk.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.extra-info-list {
+  list-style: none;
+
+}
+
+.suppliers-item {
+  backgrouns-image: url('../img/heart.svg')
+}
+
