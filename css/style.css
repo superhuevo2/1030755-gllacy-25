@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Arial sans-serif'; /*почему отображается другой шрифт*/
+  font-family: 'Roboto', 'Arial', sans-serif; /*почему отображается другой шрифт*/
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -112,7 +112,7 @@ button:focus {
 
 }
 
-.header-contacts-phone { /*на другую строку перенесется когда отрегулирую ширину параграфа, или на 2 параграфа надо разбить*/
+.header-contacts-phone { 
   font-size: 22px;
   line-height: 24px;
 }
@@ -144,10 +144,11 @@ width: 560px;
 
 
 .catalog-item {
-width: 267px;
+  width: 267px;
 
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
   color: #ffffff;
   text-align: center;
 }
@@ -157,6 +158,7 @@ width: 267px;
 .catalog-item-price {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -210,26 +212,26 @@ width: 1146px;
 
 
 
-.feature-1 {
+.features-item-feature-1 {
   background-image: url('../img/features-1.svg');
   background-repeat: no-repeat;
   
 }
 
-.feature-2 {
+.features-item-feature-2 {
   background-image: url('../img/features-2.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.feature-3 {
+.features-item-feature-3 {
   background-image: url('../img/features-3.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 
-.feature-4 {
+.features-item-feature-4 {
   background-image: url('../img/features-4.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -295,11 +297,65 @@ width: 1146px;
   font-weight: 700;
 }
 
-.socials-list {
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  
   list-style: none;
 
 }
 
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400px;
+  color: #ffffff;
+  
+}
+
+.main-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filter-label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter-form div  {
+  
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list {
+  list-style: none;
+  
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.main-footer {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.socials-list {
+  list-style: none;
+}
 
 
 .social-button {
@@ -319,26 +375,26 @@ width: 1146px;
   color: transparent;
 }
 
-.twitter {
+.social-button-twitter {
   background-image: url('../img/twitter.svg');
   background-repeat: no-repeat;
   background-position: center;
 
 }
 
-.instagram {
+.social-button-instagram {
   background-image: url('../img/instagram.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.facebook {
+.social-button-facebook {
   background-image: url('../img/fb.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.vk {
+.social-button-vk {
   background-image: url('../img/vk.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -351,6 +407,46 @@ width: 1146px;
 }
 
 .suppliers-item {
-  backgrouns-image: url('../img/heart.svg')
+  background-image: url('../img/heart.svg');
+  background-repeat: no-repeat;
 }
 
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.copyright svg {
+  width: 108px;
+  height: 38px;
+}
+
+.modal {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  
+  background-color: #f8f7f4;
+}
+.modal input,
+.modal textarea {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
+
+.modal-feedback h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.modal-feedback input {
+  font-size: 16px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
