@@ -1,16 +1,16 @@
 body {
-  font-family: 'Roboto', 'Arial', sans-serif; /*почему отображается другой шрифт*/
+  
+  
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #ffffff;
 
-  background-color: #849d8f; /*фон меняется вместе со слайдером*/
+  background-color: #849d8f; 
 }
 
-a {
-  color: #ffffff;  /*вид при наведении можно указать в общем?*/
-}
+
 
 .button {
   color: #ffffff;
@@ -18,11 +18,13 @@ a {
   line-height: 24px;
   font-weight: 700;
   
-  background-color: #e74a35; /*нужно ли указывать цвет фона если градиент*/
+  
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border: none;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
+
+
 
 .button:hover,
 button:focus {
@@ -54,6 +56,10 @@ button:focus {
   
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
+}
+
+.site-navigation-list a {
+  color:#ffffff;
 }
 
 .header-catalog-list {
@@ -96,7 +102,8 @@ button:focus {
 
 .user-navigation-list a {
   text-decoration: none;
-  
+
+  color: #ffffff;
 }
 
 
@@ -109,7 +116,6 @@ button:focus {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-
 }
 
 .header-contacts-phone { 
@@ -118,14 +124,13 @@ button:focus {
 }
 
 .special-promo {
-width: 560px;
+  width: 560px;
 
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 
   background-color: #4c000c; /*так сделать или не трогать фон?*/
-  
 }
 
 .promo-raspberry {
@@ -140,6 +145,10 @@ width: 560px;
 
 .catalog-list {
   list-style: none;
+}
+
+.catalog-list a {
+  color: #ffffff;
 }
 
 
@@ -193,7 +202,6 @@ width: 1146px;
   background-image: url(../img/features-background.jpg);
   background-repeat: repeat;
   background-position:  0 0;
-
 }
 
 .features p {
@@ -203,7 +211,6 @@ width: 1146px;
 
 .features-list {
   list-style: none;
-
 }
 
 .features-item{
@@ -244,8 +251,6 @@ width: 1146px;
 
   background-color: #ffffff;
   background-image: url('../img/blog-10-ways.jpg');
-
-
 }
 
 .new-in-blog h2 {
@@ -303,7 +308,6 @@ width: 1146px;
   color: #ffffff;
   
   list-style: none;
-
 }
 
 .breadcrumbs a {
@@ -353,6 +357,10 @@ width: 1146px;
   font-weight: 400;
 }
 
+.main-footer a {
+  color: #ffffff;
+}
+
 .socials-list {
   list-style: none;
 }
@@ -368,7 +376,6 @@ width: 1146px;
 
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
-  
 }
 
 .social-button span {
@@ -379,7 +386,6 @@ width: 1146px;
   background-image: url('../img/twitter.svg');
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .social-button-instagram {
@@ -403,7 +409,6 @@ width: 1146px;
 
 .extra-info-list {
   list-style: none;
-
 }
 
 .suppliers-item {
@@ -421,15 +426,20 @@ width: 1146px;
   height: 38px;
 }
 
-.modal {
+.popup {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
   
   background-color: #f8f7f4;
 }
-.modal input,
-.modal textarea {
+
+.popup a {
+  color: #323232;
+}
+
+.popup input,
+.popup textarea {
   font-size: 14px;
   line-height: 24px;
   color: #999999;
@@ -437,16 +447,19 @@ width: 1146px;
   background-color: #ffffff;
 }
 
-.modal-feedback h3 {
+.popup-feedback h3 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: #323232;
 }
 
-.modal-feedback input {
+.popup-feedback input {
   font-size: 16px;
   color: #999999;
 
   background-color: #ffffff;
 }
+
+/*сеточные стили*/
+
