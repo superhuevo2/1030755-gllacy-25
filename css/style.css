@@ -168,6 +168,10 @@ button:focus {
   margin-right: 0;
 }
 
+.site-navigation-items-catalog-current {
+  background-color: #d07058;
+}
+
 .navigation-popup {
   position: absolute;
 
@@ -206,6 +210,10 @@ button:focus {
   color: #323232;
 }
 
+span.navigation-popup-catalog-link {
+  background-color: #d07058;
+}
+
 .navigation-popup-catalog-link-new {
   font-size: 14px;
   line-height: 16px;
@@ -232,11 +240,11 @@ button:focus {
   background-color: #ededed;
 }
 
-.navigation-popup-catalog-link:hover {
+a.navigation-popup-catalog-link:hover {
   background-color: #fbded7;
 }
 
-.navigation-popup-catalog-link:active {
+a.navigation-popup-catalog-link:active {
   background-color: #f6b5a5;
 }
 
@@ -343,6 +351,7 @@ button:focus {
   line-height: 24px;
 
   width: 100%;
+  padding: 10px;
   
   border-radius: 5px;
   border: solid 1px #d3d3d2;
@@ -397,6 +406,11 @@ button:focus {
   top: 37px;
 
   box-sizing: border-box;
+}
+
+.navigation-popup-login a:hover,
+.navigation-popup-login:active {
+  color: #e84d37;
 }
 
 .navigation-popup-login p {
@@ -543,7 +557,6 @@ button:focus {
   font-size: 15px; 
   line-height: 18px;
   font-weight: 700;
-
 }
 
 .button-basket {
@@ -564,6 +577,11 @@ button:focus {
 
 .user-navigation-basket:hover .navigation-popup-basket {
   display: block;
+}
+
+.navigation-popup-basket a:hover,
+.navigation-popup-basket:active {
+  color: #e84d37;
 }
 
 .header-contacts {
@@ -1129,6 +1147,11 @@ span.contacts-info {
   
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
 .main-title {
   font-size: 35px;
   line-height: 41px;
@@ -1306,8 +1329,23 @@ span.contacts-info {
   border-radius: 50px;
 }
 
+.filter-button:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #323232;
+
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
 .catalog {
   margin: 0;
+
+  border-bottom: 1px solid white;
 
   border: 1px dashed black;
 }
@@ -1330,6 +1368,8 @@ span.contacts-info {
 
   margin: 0;
   padding: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
   
   font-size: 16px;
   line-height: 18px;
@@ -1353,6 +1393,10 @@ span.contacts-info {
   text-decoration: none;
 }
 
+.pagination-item:hover {
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
 .pagination-item-current {
   color: #323232;
 
@@ -1363,12 +1407,15 @@ span.contacts-info {
 
 .main-footer {
   display: flex;
-  padding-top: 35px;
-  padding-bottom: 40px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
+
+  outline: 1px dashed blue
 }
 
 .main-footer a {
@@ -1412,6 +1459,14 @@ span.contacts-info {
   box-sizing: border-box;
 }
 
+.social-button:hover {
+  opacity: 1;
+}
+
+.social-button:active {
+  opacity: 0.7
+}
+
 .social-button-twitter {
   background-image: url('../img/twitter.svg');
   background-repeat: no-repeat;
@@ -1449,6 +1504,14 @@ span.contacts-info {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.extra-info a:hover {
+  color: #ffbc9e;
+}
+
+.extra-info a:active {
+  color: #ffbc9e;
 }
 
 .extra-info-list {
@@ -1497,6 +1560,11 @@ span.contacts-info {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+}
+
+.copyright a:hover,
+.copyright a:active {
+  color: #ffbc9e;
 }
 
 .copyright p {
