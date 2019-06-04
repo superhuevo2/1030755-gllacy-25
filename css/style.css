@@ -244,11 +244,12 @@ button:focus {
   display: flex;
   align-items: center;
 
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 
-  width: 247px;
+  width: 267px;
 
   margin: 0;
   margin-left: auto;
@@ -259,12 +260,18 @@ button:focus {
 
 .user-navigation-item {
   margin: 0px;
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
   padding: 0;
 }
 
+.user-navigation-item:first-child {
+  margin-left: auto;
+}
+
+
 .user-navigation-item:last-child {
-  margin-right: 0;
+  margin-left: 10px;
 }
 
 .user-navigation-list a {
@@ -373,6 +380,8 @@ button:focus {
   display: block;
   margin-top: 5px;
   min-height: 37px;
+
+  outline: 1px dashed yellow;
 }
 
 .navigation-popup-login {
@@ -467,6 +476,94 @@ button:focus {
 .user-navigation-login:hover polygon,
 .user-navigation-login:hover path {
   fill: #323232;
+}
+
+.user-navigation-basket {
+  position: relative;
+
+  display: block;
+  margin-top: 0px;
+}
+
+.navigation-popup-basket {
+  display: none;
+
+  width: 540px;
+  padding: 20px 15px;
+  right: 0px;
+  top: 37px;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400px;
+  color: #323232;
+
+  z-index: 2;
+}
+
+.basket-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.navigation-popup-basket td {
+  outline: 1px dashed green;
+}
+
+.navigation-popup-basket a {
+  color: #323232;
+}
+
+.basket-table-del {
+  margin: 0;
+  padding: 0 10px;
+  vertical-align: top;  /*почему крест не прижимается к верхней границе ячейки?*/
+
+  outline: 1px dashed blue;
+}
+
+.basket-delete {
+  margin: 0;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+
+  background-color: transparent;
+  background-image: url('../img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.basket-table-summary td {
+  text-align: end;
+}
+
+.basket-summary {
+  font-size: 15px; 
+  line-height: 18px;
+  font-weight: 700;
+
+}
+
+.button-basket {
+  padding: 12px 15px;
+}
+
+
+.user-navigation-basket:hover .user-navigation-icon-basket {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-navigation-basket:hover .user-navigation-icon-basket path,
+.user-navigation-basket:hover .user-navigation-icon-basket circle {
+  fill: #323232;
+}
+
+.user-navigation-basket:hover .navigation-popup-basket {
+  display: block;
 }
 
 .header-contacts {
@@ -741,6 +838,8 @@ button:focus {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 10px;
+
+  z-index: 1;
 }
 
 .catalog-item:hover .button {
@@ -991,12 +1090,36 @@ span.contacts-info {
 }
 
 .breadcrumbs {
+  display: flex;
+
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   
   list-style: none;
 }
+
+.breadcrumbs li {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: '»';
+  
+  position: absolute;
+  right: 7px;
+  
+}
+
 
 .breadcrumbs a {
   font-size: 14px;
@@ -1011,6 +1134,10 @@ span.contacts-info {
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .filter {
@@ -1018,26 +1145,221 @@ span.contacts-info {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+
+  margin-bottom: 34px;
+  padding: 0;
+
+  outline: 1px dashed blue;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 880px;
 }
 
 .filter-label {
+  position: relative;
+  top: -10px;
+  left: 15px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+
+  margin: 0;
+  padding: 0;
 }
 
-.filter-form div  {
+.filter-form fieldset {
   
+
+  margin-top: 37px;
+  margin-left: 0;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.filter-sotring {
+  width: 195px;
+  margin-bottom: 37px;
+}
+
+.filter-price {
+  width: 220px;
+}
+
+.filter-topping {
+  outline: 1px dashed black;
+}
+
+.filter-form ul {
+  display: flex;
+
+  margin-top: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  padding: 0;
+
+  list-style: none;
+
+  outline: 1px dashed blue;
+}
+
+.filter-form input[type='radio'] + label {
+  position: relative;
+
+  padding: 0;
+  padding-left: 25px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.filter-form input[type='radio'] + label::before {
+  position: absolute;
+  left: -10px;
+  top: -2px;
+
+  content: '';
+
+  width: 18px;
+  height: 18px;
+
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.filter-form input[type='radio']:checked + label::after {
+  position: absolute;
+  left: -3px;
+  top: 5px;
+
+  content: '';
+
+  width: 10px;
+  height: 10px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  border-radius: 50%;
+}
+
+.filter-form input[type='checkbox'] + label {
+  position: relative;
+
+  padding: 0;
+  padding-left: 25px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.filter-form input[type='checkbox'] + label::before {
+  position: absolute;
+  left: -10px;
+  top: -1px;
+
+  content: '';
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.filter-form input[type='checkbox']:checked + label::before {
+  position: absolute;
+  left: -10px;
+  top: -1px;
+
+  content: '';
+
+  width: 26px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  border: none;
+
+  opacity: 0.8;
+}
+
+
+.filter-button {
+  color: #ffffff;
+
+  height: 33px;
+  padding: 0px 25px;
+  /*margin: auto;*/
+  margin-top: auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+}
+
+.catalog {
+  margin: 0;
+
+  border: 1px dashed black;
+}
+
+.catalog-list {
+  margin-top: 45px;
+}
+
+.catalog .catalog-item {
+  margin-top: -45px;
+
+  outline: 1px dashed lightblue;
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
+
+  margin: 0;
+  padding: 0;
   
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
+
+.pagination-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+}
+
+.pagination-list a {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.pagination-item-current {
+  color: #323232;
+
+  background-color: #ffffff;
+
+}
+
 
 .main-footer {
   display: flex;
