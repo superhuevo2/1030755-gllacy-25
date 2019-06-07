@@ -503,8 +503,9 @@ a.navigation-popup-catalog-link:active {
 .navigation-popup-basket {
   display: none;
 
-  width: 540px;
-  padding: 20px 15px;
+  width: 510px;
+  padding: 11px 15px;
+  padding-bottom: 22px;
   right: 0px;
   top: 37px;
 
@@ -514,44 +515,107 @@ a.navigation-popup-catalog-link:active {
   color: #323232;
 
   z-index: 2;
+
+  text-align: right;
 }
 
 .basket-table {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+
+  border-spacing: 0;
+  text-align: left;
 }
 
-.navigation-popup-basket td {
-  outline: 1px dashed green;
+.basket-table .basket-table-img {
+  width: 33px;
+  height: 33px;
+  padding-top: 10px;
+} 
+
+.basket-table .basket-table-description {
+  width: 230px;
+  padding-left: 11px;
+  padding-top: 18px;
+  padding-right: 0px;
+  padding-bottom: 18px;
+}
+
+.basket-table .basket-table-price {
+  width: 115px;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 0px;
+}
+
+.basket-table .basket-table-sum {
+  padding-top: 18px;
+  padding-left: 7px;
+
+}
+
+.basket-table td {
+  vertical-align: top;
 }
 
 .navigation-popup-basket a {
   color: #323232;
 }
 
-.basket-table-del {
+.basket-table .basket-table-del {
+  width: 13px;
   margin: 0;
-  padding: 0 10px;
-  vertical-align: top;  /*почему крест не прижимается к верхней границе ячейки?*/
-
-  outline: 1px dashed blue;
+  padding: 18px 7px; 
 }
 
 .basket-delete {
+  position: relative;
+
   margin: 0;
   padding: 0;
   width: 11px;
   height: 11px;
 
-  background-color: transparent;
-  background-image: url('../img/cross.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
+
+  cursor: pointer;
+}
+
+.basket-delete::before {
+  content: '';
+
+  position: absolute;
+  top: 6px;
+  left: -1px;
+
+  width: 13px;
+  height: 1px;
+
+  background-color: #323232;
+
+  transform: rotate(45deg);
+}
+
+.basket-delete::after {
+  content: '';
+
+  position: absolute;
+  top: 6px;
+  left: -1px;
+
+  width: 13px;
+  height: 1px;
+
+  background-color: #323232;
+
+  transform: rotate(-45deg);
 }
 
 .basket-table-summary td {
+  padding-top: 12px;
   text-align: end;
+
+  border-top: 1px solid #cacac7;
 }
 
 .basket-summary {
@@ -561,7 +625,8 @@ a.navigation-popup-catalog-link:active {
 }
 
 .button-basket {
-  padding: 12px 15px;
+  padding: 9px 14px;
+  padding-bottom: 11px;
 }
 
 
@@ -620,8 +685,6 @@ a.navigation-popup-catalog-link:active {
 
   text-align: center;
   color: #ffffff;
-
-  outline: 1px dashed green;
 }
 
 .slider-list {
@@ -1217,16 +1280,7 @@ span.contacts-info {
 
   margin-bottom: 34px;
   padding: 0;
-
-  outline: 1px dashed blue;
 }
-
-/*.filter-form {
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 880px;
-}*/
 
 .filter-first-line {
   display: flex;
@@ -1264,7 +1318,7 @@ span.contacts-info {
 }
 
 .filter-sorting {
-position: relative;
+  position: relative;
 
   width: 193px;
 }
@@ -1309,17 +1363,14 @@ position: relative;
   opacity: 0.8;
 }
 
-.filter-sorting select:hover {
+.filter-sorting:hover select{
   color: #323232;
 
   opacity: 1;
 }
 
-.filter-sorting select:hover .filter-sorting::before {   /*не работает*/
-  border: 5px solid #323232;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom: 0px;
+.filter-sorting:hover::before {  
+  border-top-color: #323232;
 
   opacity: 1;
 } 
@@ -1380,8 +1431,6 @@ position: relative;
   padding: 0;
 
   list-style: none;
-
-  outline: 1px dashed blue;
 }
 
 .filter-form-item {
@@ -1507,10 +1556,7 @@ margin-right: 5px
 .catalog {
   margin: 0;
   
-
   border-bottom: 1px solid white;
-
-  border: 1px dashed black;
 }
 
 .catalog-list {
@@ -1519,8 +1565,6 @@ margin-right: 5px
 
 .catalog .catalog-item {
   margin-top: -53px;
-
-  outline: 1px dashed lightblue;
 }
 
 .pagination-list {
@@ -1553,8 +1597,6 @@ margin-right: 5px
   height: 25px;
   
   border-radius: 50%;
-
-  outline: 1px dashed yellow;
 }
 
 .pagination-list li {
@@ -1574,8 +1616,6 @@ margin-right: 5px
   height: 25px;
 
   text-align: center;
-
-  outline: 1px dashed yellow;
 }
 
 .pagination-button {
@@ -1685,8 +1725,6 @@ margin-right: 5px
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
-
-  outline: 1px dashed blue
 }
 
 .main-footer a {
@@ -1794,15 +1832,11 @@ margin-right: 5px
   padding: 0;
 
   list-style: none;
-
-  outline: 1px dashed yellow;
 }
 
 .extra-info-list li {
   width: 142px;
   padding-bottom: 4px;
-
-  outline: 1px dashed blue;
 }
 
 .extra-info-list li:nth-child(2n) {
