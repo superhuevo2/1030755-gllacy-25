@@ -263,7 +263,7 @@
                 <span class='contacts-info'>8 812 450-25-25</span>
                 (с 10 до 20 ежедневно)
               </p>
-              <button class='button'>Форма обратной связи</button>
+              <button class='button button-contacts'>Форма обратной связи</button>
             </div>
           </div>
         </section>
@@ -296,25 +296,27 @@
       <section class='popup popup-feedback'>
         <h3>Форма обратной связи</h3>
         <form class='form feedback-form' action='https://echo.htmlacademy.ru' method='POST'>
-          <p>
-            <label>
+          <p class='popup-feedback-container popup-feedback-input-container'>
+            <label class='visually-hidden'>
               Ваше имя
-              <input type='text' name='feedback-name' placeholder='Как вас зовут?'>
             </label>
+            <input type='text' name='feedback-name' placeholder='Как вас зовут?'>
           </p>
-          <p>
-            <label>
+          <p class='popup-feedback-container popup-feedback-input-container'>
+            <label class='visually-hidden'>
               Электронная почта
-              <input type='text' name='feedback-email' placeholder='Ваша почта для ответа?'>
             </label>
+            <input type='text' name='feedback-email' placeholder='Ваша почта для ответа?'>
           </p>
-          <p>
-            <label for='feedback-message'>Ваше сообщение</label>
+          <p class='popup-feedback-container popup-feedback-message-container'>
+            <label class='visually-hidden' for='feedback-message'>Ваше сообщение</label>
             <textarea name='feedback-message' id='feedback-message'>Напишите что-нибудь...</textarea>
           </p>
-          <button class='button button-send' type='submit'>Отправить</button>
+          <p class='popup-feedback-container popup-feedback-container-button'>
+            <button class='button button-feedback-send' type='submit'>Отправить</button>
+          </p>
         </form>
-        <button class='button-close' type='button'>Закрыть</button>
+        <button class='button-feedback-close' type='button'>Закрыть</button>
       </section>
     </div>    
   </body>
