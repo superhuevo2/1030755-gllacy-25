@@ -667,6 +667,10 @@ a.navigation-popup-catalog-link:active {
   fill: #323232;
 }
 
+.user-navigation-icon-basket-full polygon {
+  fill: #E84D37;
+}
+
 .user-navigation-icon-basket-full circle {
   fill: #323232;
 }
@@ -1235,7 +1239,6 @@ a.navigation-popup-catalog-link:active {
   margin-left: auto;
 }
 
-
 .contacts {
   position: relative;
 
@@ -1247,6 +1250,19 @@ a.navigation-popup-catalog-link:active {
   background-repeat: round; 
 }
 
+.contacts::before {
+  content: '';
+
+  position: absolute;
+  left: 266px;
+  top: 139px;
+
+  width: 80px;
+  height: 140px;
+
+  background-image: url('../img/pin.png')
+}
+
 .contacts-container {
   width: 1146px;
   margin: 0 auto;
@@ -1256,7 +1272,7 @@ a.navigation-popup-catalog-link:active {
 
 .contacts-main {
   position: absolute;
-  top: 62px;
+  top: 63px;
   right: 0;
 
   width: 302px;
@@ -1639,6 +1655,12 @@ a.navigation-popup-catalog-link:active {
   opacity: 1;
 }
 
+.filter-form input[disabled] + label {
+  cursor: default;
+
+  opacity: 0.4
+}
+
 
 .filter-button {
   color: #ffffff;
@@ -1837,7 +1859,7 @@ a.navigation-popup-catalog-link:active {
 .main-footer {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-bottom: 30px;
 
   font-size: 13px;
@@ -2019,7 +2041,7 @@ a.navigation-popup-catalog-link:active {
 .copyright::before {
   position: absolute;
   right: 80px;
-  top: -12px;
+  top: -14px;
 
   content: '';
 
