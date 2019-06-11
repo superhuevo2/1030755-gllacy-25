@@ -794,6 +794,10 @@ a.navigation-popup-catalog-link:active {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(209, 208, 206, 0.4);
+}
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url('../img/slider-item-1.png');
@@ -822,6 +826,10 @@ a.navigation-popup-catalog-link:active {
 #product-2:checked ~ .site-wrapper label[for='product-2'],
 #product-3:checked ~ .site-wrapper label[for='product-3'] {
   background-color: #ffffff;
+}
+
+.index-page {
+  margin-bottom: 470px;
 }
 
 .index-columns {
@@ -992,6 +1000,7 @@ a.navigation-popup-catalog-link:active {
 .catalog-item-price {
   position: absolute;
   top: 162px;
+  left: -2px;
 
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 
@@ -1246,10 +1255,11 @@ a.navigation-popup-catalog-link:active {
 }
 
 .contacts {
-  position: relative;
+  position: absolute;
+  left: 0;
 
   height: 430px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 
   background-image: url('../img/contacts-map.png');
@@ -2044,12 +2054,10 @@ a.navigation-popup-catalog-link:active {
   text-align: right;
 }
 
-.copyright::before {
+.copyright-logo {
   position: absolute;
   right: 80px;
   top: -14px;
-
-  content: '';
 
   width: 108px;
   height: 40px;
