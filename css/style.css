@@ -382,7 +382,12 @@ a.navigation-popup-catalog-link:active {
   padding: 10px;
   
   border-radius: 5px;
-  border: solid 1px #d3d3d2;
+  border: 1px solid #d3d3d2;
+}
+
+.navigation-popup-search input:hover {
+  border:2px solid #d3d3d2;
+  margin: -1px;
 }
 
 .user-navigation-search:hover .navigation-popup-search,
@@ -462,6 +467,11 @@ a.navigation-popup-catalog-link:active {
 
   border-radius: 5px;
   border: solid 1px #d3d3d2;
+}
+
+.navigation-popup-login input:hover {
+  border: solid 2px #d3d3d2;
+  margin: -1px;
 }
 
 .navigation-popup-login a {
@@ -1251,6 +1261,11 @@ a.navigation-popup-catalog-link:active {
   border-radius: 5px;
 
   box-sizing: border-box;
+}
+
+.subscribe input:hover {
+  border: solid 2px rgba(178, 178, 178, 0.52);
+  margin: -1px;
 }
 
 .subscribe .button {
@@ -2164,9 +2179,7 @@ a.navigation-popup-catalog-link:active {
 .popup-feedback textarea:hover {
   border: 2px solid #c7c6c5;
 
-  margin-top: -1px;
-  margin-left: -1px;
-  margin-bottom: -1px;
+  margin: -1px;
 }
 
 .popup-feedback textarea:hover {
