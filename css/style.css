@@ -86,10 +86,13 @@ img {
 }
 
 .site-wrapper {
+  background-color: #849d8f;
+}
+
+.site-background-img {
   width: 1200px;
   margin: 0 auto;
 
-  background-color: #849d8f;
   background-image: url('../img/slider-item-1.png');
   background-repeat: no-repeat;
   background-position: top center;
@@ -101,17 +104,17 @@ img {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.site-background-img::before,
+.site-background-img::after {
   content: '';
   visibility: hidden;
 }
 
-.site-wrapper::before {
+.site-background-img::before {
   background-image: url('../img/slider-item-2.png')
 }
 
-.site-wrapper::after {
+.site-background-img::after {
   background-image: url('../img/slider-item-3.png')
 }
 
@@ -873,18 +876,27 @@ a.navigation-popup-catalog-link:active {
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
+}
+
+#product-1:checked > .site-background-img {
   background-image: url('../img/slider-item-1.png');
   background-position: 78px 1px;
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
+}
+
+#product-2:checked > .site-background-img {
   background-image: url('../img/slider-item-2.png');
   background-position: 78px 1px;
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
+}
+
+#product-3:checked > .site-background-img {
   background-image: url('../img/slider-item-3.png');
   background-position: 78px 1px;
 }
