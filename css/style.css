@@ -431,7 +431,7 @@ a.navigation-popup-catalog-link:active {
   display: none;
 
   width: 277px;
-  height: 214;
+  height: 214px;
   margin: 0;
   padding: 20px 18px 0;
 
@@ -512,6 +512,10 @@ a.navigation-popup-catalog-link:active {
   margin: 0;
 }
 
+.login-extra a:last-child {
+  margin-top: -3px;
+}
+
 .user-navigation-login:hover .navigation-popup-login,
 .user-navigation-login:focus-within .navigation-popup-login,
 .navigation-popup-login:hover {
@@ -551,7 +555,7 @@ a.navigation-popup-catalog-link:active {
 
   font-size: 13px;
   line-height: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #323232;
 
   z-index: 2;
@@ -1290,6 +1294,8 @@ a.navigation-popup-catalog-link:active {
 
 .contacts iframe {
   position: absolute;
+
+  border: 0px;
 }
 
 .contacts::before {
@@ -1410,7 +1416,7 @@ a.navigation-popup-catalog-link:active {
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #ffffff;
 
   text-decoration: none;
@@ -1501,7 +1507,6 @@ a.navigation-popup-catalog-link:active {
   background-color: transparent;
 
   -webkit-appearance: button;
-  appearance: button;
 
   cursor: pointer;
 
@@ -2036,7 +2041,7 @@ a.navigation-popup-catalog-link:active {
   content: '';
 
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: -23px;
   width: 15px;
   height: 13px;
