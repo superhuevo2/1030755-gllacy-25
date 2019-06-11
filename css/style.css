@@ -2103,11 +2103,12 @@ a.navigation-popup-catalog-link:active {
 .popup-feedback {
   display: none;
 
-  top: 250px;
+  top: 50%;
   left: 50%;
 
   margin-left: -238px;
-
+  margin-top: -221px;
+  height: 442px;
   width: 477px;
   padding-bottom: 27px;
   padding-top: 15px;
@@ -2245,4 +2246,30 @@ a.navigation-popup-catalog-link:active {
   padding-bottom: 11px;
   padding-left: 23px;
   padding-right: 23px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-error {
+  animation: shake 0.5s;
 }
