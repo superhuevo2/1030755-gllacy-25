@@ -1288,6 +1288,10 @@ a.navigation-popup-catalog-link:active {
   background-repeat: round; 
 }
 
+.contacts iframe {
+  position: absolute;
+}
+
 .contacts::before {
   content: '';
 
