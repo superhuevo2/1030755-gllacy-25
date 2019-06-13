@@ -153,8 +153,8 @@
       </header>
       <main>
         <ul class='breadcrumbs'>
-          <li><a href='index.html'><span class='text-decor'>Главная</span></a></li>
-          <li><a href='catalog.html'><span class='text-decor'>Каталог</span></a></li>
+          <li><a class='breadcrumbs-item-link' href='index.html'><span class='text-decor'>Главная</span></a></li>
+          <li><a class='breadcrumbs-item-link' href='catalog.html'><span class='text-decor'>Каталог</span></a></li>
           <li class='breadcrumbs-current'>Сливочное</li>
         </ul>
         <h1 class='main-title'>Сливочное мороженое</h1>
@@ -180,19 +180,19 @@
                 <legend class='filter-label'>Жирность:</legend>
                 <ul class='filter-form-list'>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='radio' name='fat' value='0%' id='fat-0' tabindex='-1'>
+                    <input class='visually-hidden filter-fat-input' type='radio' name='fat' value='0%' id='fat-0' tabindex='-1'>
                     <label for='fat-0' tabindex='0'>0%</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='radio' name='fat' value='10%' id='fat-10' tabindex='-1'>
+                    <input class='visually-hidden filter-fat-input' type='radio' name='fat' value='10%' id='fat-10' tabindex='-1'>
                     <label for='fat-10' tabindex='0'>до 10%</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='radio' name='fat' value='30%' id='fat-30' tabindex='-1'>
+                    <input class='visually-hidden filter-fat-input' type='radio' name='fat' value='30%' id='fat-30' tabindex='-1'>
                     <label for='fat-30' tabindex='0'>до 30%</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='radio' name='fat' value='more-30%' id='fat-30+' tabindex='-1'>
+                    <input class='visually-hidden filter-fat-input' type='radio' name='fat' value='more-30%' id='fat-30+' tabindex='-1'>
                     <label for='fat-30+' tabindex='0'>выше 30%</label>
                   </li>
                 </ul>
@@ -203,23 +203,23 @@
                 <legend class='filter-label'>Наполнители:</legend>
                 <ul class='filter-form-list'>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='checkbox' value='chocolate' id='chocolate' tabindex='-1'>
+                    <input class='visually-hidden filter-topping-input' type='checkbox' value='chocolate' id='chocolate' tabindex='-1'>
                     <label for='chocolate' tabindex='0'>шоколадные</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='checkbox' value='surag-topping' id='surag-topping' tabindex='-1'>
+                    <input class='visually-hidden filter-topping-input' type='checkbox' value='surag-topping' id='surag-topping' tabindex='-1'>
                     <label for='surag-topping' tabindex='0'>сахарные присыпки</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='checkbox' value='fruits' id='fruits' tabindex='-1'>
+                    <input class='visually-hidden filter-topping-input' type='checkbox' value='fruits' id='fruits' tabindex='-1'>
                     <label for='fruits' tabindex='0'>фрукты</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='checkbox' value='syrups' id='syrups' tabindex='-1'>
+                    <input class='visually-hidden filter-topping-input' type='checkbox' value='syrups' id='syrups' tabindex='-1'>
                     <label for='syrups' tabindex='0'>сиропы</label>
                   </li>
                   <li class='filter-form-item'>
-                    <input class='visually-hidden' type='checkbox' value='jam' id='jam' tabindex='-1'>
+                    <input class='visually-hidden filter-topping-input' type='checkbox' value='jam' id='jam' tabindex='-1'>
                     <label for='jam' tabindex='0'>джемы</label>
                   </li>
                 </ul>
