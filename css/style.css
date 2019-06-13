@@ -1677,7 +1677,7 @@ span.navigation-popup-catalog-link {
   content: '';
 
   position: absolute;
-  top: -12px;
+  top: -10px;
   left: 13px;
 
   width: 4px;
@@ -1692,7 +1692,7 @@ span.navigation-popup-catalog-link {
   content: '';
 
   position: absolute;
-  top: -12px;
+  top: -10px;
   right: 43px;
 
   width: 4px;
