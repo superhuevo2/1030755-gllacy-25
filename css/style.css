@@ -762,8 +762,8 @@ span.navigation-popup-catalog-link {
   background-color: #f8f7f4;
 }
 
-.user-navigation-basket:hover .user-navigation-icon-basket path,
-.user-navigation-basket:hover .user-navigation-icon-basket circle {
+.user-navigation-basket:hover path,
+.user-navigation-basket:hover circle {
   fill: #323232;
 }
 
@@ -1121,6 +1121,7 @@ span.navigation-popup-catalog-link {
 
 .catalog-item .button {
   position: relative;
+  top: -6px;
 
   visibility: hidden;
 }
@@ -1149,7 +1150,7 @@ span.navigation-popup-catalog-link {
 
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
-  border-radius: 15px;
+  border-radius: 5px;
 
   pointer-events: none; 
 
@@ -1560,6 +1561,8 @@ span.navigation-popup-catalog-link {
 }
 
 .filter-first-line {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1601,8 +1604,6 @@ span.navigation-popup-catalog-link {
 }
 
 .filter-sorting {
-  position: relative;
-
   width: 193px;
 }
 
@@ -1625,37 +1626,32 @@ span.navigation-popup-catalog-link {
   opacity: 0.8;
 }
 
-.filter-sorting::before {
-  content: '';
-
+.filter-sorting svg {
   position: absolute;
-  top: 22px;
-  right: 13px;
-  width: 0;
-  height: 0;
 
-  color: #ffffff;
-  
-  border: 7px solid white;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom: 0px;
-  pointer-events: none; /*??*/
+  top: 21px;
+  left: 168px;
+
+  pointer-events: none; 
+}
+
+.filter-sorting polyline {
+  fill: #ffffff;
 
   opacity: 0.8;
 }
 
-.filter-sorting:hover select{
+.filter-sorting:hover select {
   color: #323232;
 
   opacity: 1;
 }
 
-.filter-sorting:hover::before {  
-  border-top-color: #323232;
+.filter-sorting:hover polyline {
+  fill: #323232;
 
   opacity: 1;
-} 
+}
 
 .filter-price {
   width: 220px;
