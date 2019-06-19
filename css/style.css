@@ -2285,6 +2285,14 @@ span.navigation-popup-catalog-link {
   z-index: 2;
 }
 
+.popup-feedback:target {
+  display: block;
+
+  -webkit-animation: bounce 0.5s;
+
+          animation: bounce 0.5s
+}
+
 .popup-feedback-show {
   display: block;
 
