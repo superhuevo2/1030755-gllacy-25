@@ -1820,6 +1820,18 @@ span.navigation-popup-catalog-link {
   opacity: 0.4
 }
 
+.filter-fat-input:focus + label {
+  outline: auto;
+  outline-color: blue;
+  outline-width: 4px;
+}
+
+.filter-topping-input:focus + label {
+  outline: auto;
+  outline-color: blue;
+  outline-width: 4px;
+}
+
 .filter-form label:active {
   outline: none;
 }
