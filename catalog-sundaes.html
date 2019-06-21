@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic' rel='stylesheet'>
     <link href='css/normalize.css' rel='stylesheet'>
-    <link href='css/style-mini.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
     <div class='container'>
@@ -98,49 +98,51 @@
                 </a>
                 <section class='navigation-popup navigation-popup-basket'>
                   <h2 class='visually-hidden'>Корзина</h2>
-                  <table class='basket-table'>
-                    <caption class='visually-hidden'>Ваши товары</caption>
-                    <tr>
-                      <td class='basket-table-del'>
-                        <button class='basket-delete' type='button'><span class='visually-hidden'>Удалить позицию</span></button>
-                      </td>
-                      <td class='basket-table-img'>
-                        <a href='product-1.html'><img src='img/product-1-small.jpg' width='33' height='33' alt='мороженое'></a>
-                      </td>
-                      <td class='basket-table-description'>
-                          <a href='product-1.html'>Пломбир с апельсиновым джемом</a>
-                      </td>
-                      <td class='basket-table-price'>
-                        1,5 кг х <span class='bascket-price'>200 руб.</span>
-                      </td>
-                      <td class='basket-table-sum'>
-                        300 руб.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class='basket-table-del'>
-                        <button class='basket-delete' type='button'><span class='visually-hidden'>Удалить позицию</span></button>
-                      </td>
-                      <td class='basket-table-img'>
-                        <a href='product-2.html'><img src='img/product-2-small.jpg' width='33' height='33' alt='мороженое'></a>
-                      </td>
-                      <td class='basket-table-description'>
-                          <a href='product-2.html'>Клубничный пломбир с присыпкой из белого шоколада</a>
-                      </td>
-                      <td class='basket-table-price'>
-                        1,5 кг х <span class='bascket-price'>300 руб.</span>
-                      </td>
-                      <td class='basket-table-sum'>
-                        450 руб.
-                      </td>
-                    </tr>
-                    <tr class='basket-table-summary'>
-                      <td colspan='5'>
-                        <span class='basket-summary'>Итого: 750 руб.</span>
-                      </td>
-                    </tr>
-                  </table>
-                  <button class='button button-basket'>Оформить заказ</button>
+                  <form action="https://echo.htmlacademy.ru" method="POST">
+                    <table class='basket-table'>
+                      <caption class='visually-hidden'>Ваши товары</caption>
+                      <tr>
+                        <td class='basket-table-del'>
+                          <button class='basket-delete' type='button'><span class='visually-hidden'>Удалить позицию</span></button>
+                        </td>
+                        <td class='basket-table-img'>
+                          <a href='product-1.html'><img src='img/product-1-small.jpg' width='33' height='33' alt='мороженое'></a>
+                        </td>
+                        <td class='basket-table-description'>
+                            <a href='product-1.html'>Пломбир с апельсиновым джемом</a>
+                        </td>
+                        <td class='basket-table-price'>
+                          1,5 кг х <span class='bascket-price'>200 руб.</span>
+                        </td>
+                        <td class='basket-table-sum'>
+                          300 руб.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class='basket-table-del'>
+                          <button class='basket-delete' type='button'><span class='visually-hidden'>Удалить позицию</span></button>
+                        </td>
+                        <td class='basket-table-img'>
+                          <a href='product-2.html'><img src='img/product-2-small.jpg' width='33' height='33' alt='мороженое'></a>
+                        </td>
+                        <td class='basket-table-description'>
+                            <a href='product-2.html'>Клубничный пломбир с присыпкой из белого шоколада</a>
+                        </td>
+                        <td class='basket-table-price'>
+                          1,5 кг х <span class='bascket-price'>300 руб.</span>
+                        </td>
+                        <td class='basket-table-sum'>
+                          450 руб.
+                        </td>
+                      </tr>
+                      <tr class='basket-table-summary'>
+                        <td colspan='5'>
+                          <span class='basket-summary'>Итого: 750 руб.</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <button class='button button-basket' type="submit">Оформить заказ</button>
+                  </form>
                 </section>
               </div>
             </li>

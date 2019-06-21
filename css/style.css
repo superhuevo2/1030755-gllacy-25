@@ -177,7 +177,7 @@ img {
 }
 
 .site-navigation-items {
-  display: inline-block;
+  display: block;
 
   
   padding-left: 14px;
@@ -247,6 +247,8 @@ img {
 }
 
 span.navigation-popup-catalog-link {
+  color: #ffffff;
+
   background-color: #d07058;
 }
 
@@ -470,7 +472,6 @@ span.navigation-popup-catalog-link {
   display: none;
 
   width: 277px;
-  height: 214px;
   margin: 0;
   padding: 20px 18px 0;
 
@@ -610,6 +611,11 @@ span.navigation-popup-catalog-link {
   z-index: 2;
 
   text-align: right;
+}
+
+.navigation-popup-basket form {
+  margin: 0;
+  padding: 0;
 }
 
 .basket-table {
@@ -1859,10 +1865,14 @@ span.navigation-popup-catalog-link {
 .filter-button:active {
   color: #323232;
 
+  padding: 2px 28px;
+
   -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
 
           box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
+
+  border: none;
 }
 
 .catalog {
